@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ES6</title>
+        
+   <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+
+</head>
+
+    <body>
+        <header>Using ES 6</header>
+
+        <script type="module">
+
+          var set = new Set();
+          set.add({x: 12});
+          set.add(44);
+          set.add("text");
+          console.log( "set: " , set)
+  
+          set.delete(44);
+          console.log( "set after del: " , set)
+
+          //create a clone 
+          var set_2 = new Set(set.values());
+          console.log( "set_2: " , set_2);
+
+      </script>
+    </body>
+</html>
